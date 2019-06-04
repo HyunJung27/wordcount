@@ -1,0 +1,20 @@
+<head>
+    <style>
+         *{background-color: #FFFACD}
+         @font-face { font-family: 'YunTaemin'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YunTaemin.woff') format('woff'); font-weight: normal; font-style: normal; }
+         h1 {font-family: 'YunTaemin'; font-size: 60px}
+         a:hover{
+            background-color: hotpink
+        }
+    </style>
+</head>
+
+<body>
+    <h1>안녕하세요, 여기서 글자를 세세요!</h1>
+    <a href="{% url 'about' %}">ABOUT</a>
+    <form action="{% url 'result' %}">
+        <textarea cols="80" rows="10" name="fulltext"></textarea>
+        <br>
+        <input class="btn btn-outline-danger" type="submit" value="count!">
+    </form>
+</body>
